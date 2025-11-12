@@ -978,3 +978,471 @@ SERVICES & CARDS
     font-size: 1.5rem;
     margin-right: 10px;
 }
+/* ========================================
+TESTIMONIALS CAROUSEL
+======================================== */
+.testimonials-section {
+    padding: 80px 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.testimonials-carousel {
+    position: relative;
+    max-width: 1000px;
+    margin: 50px auto 0;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-slide {
+    min-width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.testimonial-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: linear-gradient(45deg, var(--orange-light), var(--purple)) padding-box,
+                linear-gradient(45deg, var(--orange-light), var(--purple)) border-box;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+.client-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--gradient-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0 auto 20px;
+    border: 3px solid var(--gold);
+}
+
+.testimonial-text {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--light-gray);
+    font-size: 1.1rem;
+}
+
+.client-name {
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.client-language {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--light-gray);
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.carousel-dot.active {
+    background: var(--gold);
+}
+
+/* ========================================
+CONTACT FORM & FOOTER
+======================================== */
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.contact-info {
+    padding: 20px;
+}
+
+.contact-form-container {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.form-input, .form-select, .form-textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: rgba(255,255,255,0.1);
+    color: var(--white);
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
+    background: rgba(255,255,255,0.15);
+}
+
+/* ========================================
+FOOTER STYLES
+======================================== */
+.footer {
+    background: var(--black);
+    padding: 60px 0 30px;
+    border-top: 1px solid var(--glass-border);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h4 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: var(--gold);
+}
+
+.footer-section p, .footer-section a {
+    color: var(--light-gray);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--gold);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid transparent;
+    background: linear-gradient(45deg, var(--gold), var(--light-navy)) padding-box,
+                linear-gradient(45deg, var(--gold), var(--light-navy)) border-box;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+}
+
+.footer-legal {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.copyright {
+    color: var(--light-gray);
+}
+
+.footer-tagline {
+    color: var(--gold);
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* ========================================
+AFFILIATE & SPECIAL SECTIONS
+======================================== */
+.affiliate-section {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--orange) 100%);
+    color: #000;
+    padding: 50px 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.affiliate-section h3 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.commission-tiers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.commission-tier {
+    background: rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 12px;
+    min-width: 200px;
+}
+
+.commission-percentage {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.commission-amount {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.commission-program {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.affiliate-partners-footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.affiliate-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.affiliate-heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--gold);
+}
+
+.affiliate-subheading {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.affiliate-description {
+    color: var(--light-gray);
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* ========================================
+AI COURSES & ENTERPRISE
+======================================== */
+.ai-courses-section {
+    padding: 80px 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.ai-courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.ai-course-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: linear-gradient(45deg, var(--blue), var(--gold)) padding-box,
+                linear-gradient(45deg, var(--blue), var(--gold)) border-box;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.ai-course-card.featured {
+    border: 3px solid var(--gold);
+    transform: scale(1.05);
+}
+
+.ai-course-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gradient-gold);
+    color: var(--black);
+    padding: 8px 25px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.ai-course-icon {
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.ai-course-price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--purple-light);
+    margin: 20px 0;
+}
+
+.ai-course-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.ai-course-features li {
+    padding: 8px 0;
+    color: var(--light-gray);
+    display: flex;
+    align-items: center;
+}
+
+.ai-course-features li:before {
+    content: "✓";
+    color: var(--gold);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.enterprise-solution {
+    background: linear-gradient(135deg, rgba(30,58,138,0.2), rgba(139,92,246,0.1));
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.enterprise-price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--gold);
+    margin: 1rem 0;
+}
+
+/* ========================================
+MOBILE RESPONSIVE FIXES
+======================================== */
+@media (max-width: 768px) {
+    .contact-grid,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .program-card.featured,
+    .ai-course-card.featured,
+    .pricing-card.featured {
+        transform: none;
+    }
+    
+    .pricing-card.featured:hover,
+    .ai-course-card.featured:hover {
+        transform: translateY(-5px);
+    }
+    
+    .commission-tiers {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .strategic-partners-categories,
+    .services-grid,
+    .ai-courses-grid,
+    .builders-lab-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-btns .btn {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+}
