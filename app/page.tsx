@@ -1,4 +1,3 @@
-// app/page.tsx
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-purple-900 to-blue-900 flex items-center justify-center">
